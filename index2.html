@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi landing page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <style>
+        /* aquí puedes agregar tus estilos CSS personalizados */
+        
+        <body> {
+            font-family: Arial, sans-serif;
+            background-color: #F2F2F2;
+        }
+        
+        </body>.container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            background-color: #3498DB;
+            color: #FFFFFF;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bienvenido a Job Finder</h1>
+        <h1>Descubre ofertas de empleo para estudiantes recién graduados.</h1>
+        <h5>Con JobFinder, encontrarás las mejores ofertas de empleo para estudiantes recién graduados.</h5>
+        <a href="#" class="btn">Comienza ahora</a>
+    </div>
+</body>
+
+</html>
+
+<!-- Empieza body -->
+
+<body>
+    <div id="container">
+        <div>
+            <div id="inputGroup">
+                <!-- Lleva placeholder -->
+                <input id="searchBoxTop" type="search" placeholder="Busca los mejores empleos." aria-placeholder="Busca los mejores empleos.">
+            </div>
+            <!-- Header con el texto de trabajo que lleva a la misma pagina -->
+            <header>
+                <div id="headerWrapper">
+                    <h1> <a href="index.html"> Trabajo</a></h1>
+                    <div>
+                        <nav id="homeNav">
+                            <!-- El nosotros nos lleva a la parte de abajo en donde tenemos un id para nosotros, muestra nuestros nombre -->
+                            <ul>
+                                <li><a href="#Nosotros">Nosotros</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!-- La verdad esto no sirve, es nomas para que se vea mas bonito, todos llevan a nosotros tambien -->
+            <nav id="contentNav">
+                <ul>
+                    <li><a href="#Nosotros">Empleos</a></li>
+                    <li><a href="#Nosotros">Tecnologia</a></li>
+                    <li><a href="#Nosotros">Oportunidades</a></li>
+                    <li><a href="#Nosotros">Junior Dev</a></li>
+                    <li><a href="#Nosotros">Tiempo medio</a></li>
+                    <li><a href="#Nosotros">Tiempo completo</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <!-- El carrusel es un ejemplo de internet y tiene imagenes de continental oracle y amazon -->
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                    <div class="carousel-item">
+                        <img src="assets/images/continental.png">
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="assets/images/oracle.png">
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="assets/images/amazon.png">
+                    </div>
+                    <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                    <label for="carousel-2" class="carousel-control next control-1">›</label>
+                    <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                    <label for="carousel-3" class="carousel-control next control-2">›</label>
+                    <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                    <label for="carousel-1" class="carousel-control next control-3">›</label>
+                    <ol class="carousel-indicators">
+                        <li>
+                            <label for="carousel-1" class="carousel-bullet">•</label>
+                        </li>
+                        <li>
+                            <label for="carousel-2" class="carousel-bullet">•</label>
+                        </li>
+                        <li>
+                            <label for="carousel-3" class="carousel-bullet">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <main>
+                <!-- Empieza lista de empresas -->
+                <section>
+                    <p class="outset"> Encuentra tu empleo entre las siguientes empresas:</p>
+                </section>
+                <article>
+                    <!-- se listan todas las empresas -->
+                    <ul>
+                        <li class="outset">
+                            <a href="https://www.continental.com/es-mx/carrera/puestos-vacantes-actuales/">Continental</a> </li>
+                        <li class="outset">
+                            <a href="https://www.oracle.com/mx/careers/">Oracle</a> </li>
+                        <li class="outset">
+                            <a href="https://www.amazon.jobs/es/job_categories">Amazon</a> </li>
+                        <li class="outset">
+                            <a href="https://www.intel.com/content/www/us/en/jobs/jobs-at-intel.html">Intel</a> </li>
+                        <li class="outset">
+                            <a href="https://www.tesla.com/es_mx/careers">Tesla</a> </li>
+                        <li class="outset">
+                            <a href="https://careers.pypl.com/home/">Paypal</a> </li>
+                        <li class="outset">
+                            <a href="https://careers-meli.mercadolibre.com">Mercado libre</a> </li>
+                    </ul>
+                </article>
+                <article>
+                    <ul>
+                        <li class="outset">
+                            <a href="https://careers.microsoft.com/us/en">Microsoft</a></li>
+                        <li class="outset">
+                            <a href="https://jobs.apple.com/es-mx/search?location=mexico-MEXC">Apple</a></li>
+                        <li class="outset">
+                            <a href="https://jobs.apple.com/es-mx/search?location=mexico-MEXC">HP</a></li>
+                        <li class="outset">
+                            <a href="https://www.toshiba.com/tic/inside-toshiba/careers">Toshiba</a></li>
+                        <li class="outset">
+                            <a href="https://www.ibm.com/careers/us-en/">IBM</a></li>
+                        <li class="outset">
+                            <a href="https://www.samsung.com/us/careers/">Samsung</a></li>
+                        <li class="outset">
+                            <a href="https://www.sonyjobs.com">Sony</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <ul>
+                        <li class="outset">
+                            <a href="https://careers.google.com/jobs/results/">Google</a></li>
+                        <li class="outset">
+                            <a href="https://careers.twitter.com">Twitter</a></li>
+                        <li class="outset">
+                            <a href="https://jobs.netflix.com">Netflix</a></li>
+                        <li class="outset">
+                            <a href="https://www.metacareers.com/areas-of-work/Facebook%20App/?p[divisions][0]=Facebook&divisions[0]=Facebook">Facebook</a></li>
+                        <li class="outset">
+                            <a href="https://www.youtube.com/jobs/">Youtube</a></li>
+                        <li class="outset">
+                            <a href="https://about.instagram.com/about-us/careers">Instagram</a></li>
+                        <li class="outset">
+                            <a href="https://www.yahooinc.com/careers/">Yahoo</a></li>
+                    </ul>
+                </article>
+
+                <!-- Esta parte van nuestros nombres -->
+
+                <div id="Nosotros"></div>
+                <article>
+                    <ul>
+                        <li class="Nosotros">
+                            <a>Fernando Daniel Vera Meza</a></li>
+                        <li class="Nosotros">
+                            <a>Aqui va alguien</a></li>
+                        <li class="Nosotros">
+                            <a>Aqui va alguien mas</a></li>
+                        <li class="Nosotros">
+                            <a>Aqui va alguien mas</a></li>
+
+                    </ul>
+                </article>
+            </main>
+        </div>
+    </div>
+</body>
+
+<!-- Fin del programa -->
+
+</html>
