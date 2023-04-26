@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Estas de enfrente son un tipo de letra mas bonito, esta descargado en  -->
     <link rel="stylesheet" href="assets/fonts/glyphicons-halflings-regular.ttf">
+    <link href="https:/fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
     <!-- Estilos de ultimo momento -->
@@ -54,6 +55,35 @@
 <!-- Empieza body -->
 
 <body>
+    <div class="wrapper">
+        <div class="container">
+            <p id="quote">
+                lorem cjkndciwenincu
+            </p>
+            <h3 id="author">mckdjncwie</h3>
+            <button id="btn">Get quote</button>
+        </div>
+    </div>
+    <script>
+        let quote = document.getElementById("quote");
+        let author = document.getElementById("author");
+        let btn = document.getElementById("btn");
+
+        const url="https://api.quotable.io/random";
+
+        let getQuote = ()=> {
+            fetch(url)
+                .then((data) => data.json())
+                .then((item) => {
+                    quote.innerText=item.content;
+                    author.innerText=item.author;
+
+                });
+        };
+
+        window.addEventListener("load", getQuote);
+        btn.addEventListener("click",getQuote);
+    </script>
     <script src="app.js"></script>
     <div id="container">
         <div>

@@ -290,36 +290,56 @@ main>article>ul>li:hover {
 }
 
 *{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-.box {
-    background-color: white;
-    position: right;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+
+
+.container{
+    width: 100%;
+    background-color: #d9d9d9;
+    padding: 50px 40px;
+    box-shadow: 0 20px 65px rgba(87, 11, 16, 0.5);
+    position: relative;
+    border-radius: 5px;
     text-align: center;
 }
 
-.box p {
-    margin: 2rem;
+.container:after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 120%;
+    background-color: #ffffff;
+    z-index: -1;
+    top: -10%;
+    left: -10%;
 }
 
-.box button {
-    background-color: rebeccapurple;
-    border: 0;
-    border-radius: 3px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-    color: white;
+.container p{
+    color: rgb(0, 0, 0);
+    line-height: 2;
+    font-size: 23px;
+}
+
+.container h3{
+    color: rgb(0, 0, 0);
+    margin: 20px 0 60px 0;
+    font-weight: 60;
+    text-transform: capitalize;
+}
+
+.container button{
+    background-color: rgb(251, 230, 190);
+    border: none;
+    padding: 15px 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: darkslategrey;
     cursor: pointer;
-    padding: 0.5rem 1rem;
-    transition: transform 0.1s linear;
-}
 
-.box button:active {
-    transform: scale(0.98);
-}
-
-.box button:focus {
-    outline: none;
 }
